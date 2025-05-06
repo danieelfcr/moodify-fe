@@ -1,0 +1,133 @@
+.forms-ca{
+    text-align: center;
+    margin-top: 1%;
+    width: fit-content; /* Ajusta el ancho al contenido */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+    padding: 20px; /* Agrega relleno interno */
+    border-radius: 10px;
+    background-color: rgb(244, 240, 245);
+    margin-bottom: 5%;
+  }
+  
+  .h1-ca{
+      color: blueviolet;
+      font-size: 15px;
+      
+  }
+  
+  .p-ca{
+      color: rgb(95, 90, 101);
+      font-size: 15px;
+  }
+  
+  .forms-items-ca{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+  }
+
+  .lbl-name-ca{
+    color: rgb(7, 6, 8);
+    margin-bottom: 5px;
+    margin-right: 380px;
+}
+
+.inpt-name-ca{
+    margin-bottom: 10px;
+    width: 415px;
+    height: 30px;
+}
+
+.inpt-name-ca:hover{
+    border-color: blueviolet;
+}
+  
+  .lbl-account-ca{
+      color: rgb(7, 6, 8);
+      margin-bottom: 5px;
+      margin-right: 320px;
+  }
+  
+  .inpt-account-ca{
+      margin-bottom: 10px;
+      width: 415px;
+      height: 30px;
+  }
+  
+  .inpt-account-ca:hover{
+      border-color: blueviolet;
+  }
+  
+  .lbl-password-ca{
+      color: rgb(7, 6, 8);
+      margin-bottom: 5px;
+      margin-right: 355px;
+  }
+  
+  .inpt-password-ca{
+      margin-bottom: 15px;
+      width: 415px;
+      height: 30px;
+  }
+  
+  .inpt-password-ca:hover{
+      border-color: blueviolet;
+  }
+
+  .lbl-cpassword-ca{
+    color: rgb(7, 6, 8);
+    margin-bottom: 5px;
+    margin-right: 295px;
+}
+
+.inpt-cpassword-ca{
+    margin-bottom: 15px;
+    width: 415px;
+    height: 30px;
+}
+
+.inpt-cpassword-ca:hover{
+    border-color: blueviolet;
+}
+  
+  .btn-account-ca{
+      width: 425px;
+      height: 40px;
+      font-size: 15px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      background-color: blueviolet;
+      box-shadow: none;
+      border-style: solid;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      margin-bottom: 20px;
+  }
+  
+  .btn-account-ca:hover{
+      transform: scale(1.1);
+  }
+  
+  .btn-si-ca{
+      font-size: 15px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: black;
+      background-color:  rgb(244, 240, 245);
+      box-shadow: none;
+      border-style: none;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      margin-bottom: 20px;
+  }
+  
+  .btn-si-ca:hover{
+      color:blueviolet;
+      text-decoration: underline;
+  }   
+  
+  

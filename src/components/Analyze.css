@@ -1,0 +1,132 @@
+.photo-upload-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    max-height: 100%;
+  }
+  
+  .photo-section {
+    flex: 1;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .photo-section h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #7E22CE;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .photo-section p {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .photo-text-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #analyze-btn {
+    background-color: #7E22CE;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  #analyze-btn:not(:disabled):hover {
+    background-color: #7E22CE;
+    transform: scale(1.1);
+  }
+
+  #analyze-btn:disabled {
+    background-color: #b673fd;
+    transform: scale(1.1);
+    cursor: not-allowed;
+  }
+  
+  .upload-area {
+    border: 2px dashed #d8b4fe;
+    border-radius: 8px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    height: 55%;
+    min-height: 200px;
+  }
+  
+  .upload-area:hover {
+    border-color: #7E22CE;
+  }
+  
+  .upload-area.with-preview {
+    padding: 0;
+    border-style: solid;
+  }
+  
+  .upload-icon {
+    color: #7E22CE;
+    margin-bottom: 16px;
+  }
+  
+  .upload-text {
+    margin: 0;
+    text-align: center;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .upload-format {
+    margin: 0;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .preview-image {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    border-radius: 6px;
+  }
+  
+  /* Responsive para dispositivos móviles */
+  @media (max-width: 768px) {
+    .photo-upload-container {
+      flex-direction: column;
+    }
+  
+    .photo-section {
+      width: 100%;
+    }
+  }
+  
+  

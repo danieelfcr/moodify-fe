@@ -1,0 +1,25 @@
+[
+    {
+      "id": 1,
+      "emotion": "surprised",
+      "timestamp": "3/11/2025 7:59:21 PM",
+      "recommendations": ["Wow - Post Malone", "Suprise Yourself - Jack Garratt", "Surprise Hotel - Fool's Gold"]
+    },
+    {
+      "id": 2,
+      "emotion": "happy",
+      "timestamp": "2/10/2025 3:45:12 PM",
+      "recommendations": [
+        "Happy - Pharrell Williams",
+        "Good Feeling - Flo Rida",
+        "Can't Stop the Feeling - Justin Timberlake"
+      ]
+    },
+    {
+      "id": 3,
+      "emotion": "sad",
+      "timestamp": "1/5/2025 11:22:33 AM",
+      "recommendations": ["Someone Like You - Adele", "Fix You - Coldplay", "Hurt - Johnny Cash"]
+    }
+  ]
+  

@@ -1,0 +1,128 @@
+.history-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .history-main-text {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .history-main-text h1 {
+    color: #8a2be2;
+    font-size: 32px;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  .history-main-text p {
+    color: #666;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .history-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .history-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+  }
+  
+  .history-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .history-icon-container {
+    margin-right: 12px;
+  }
+  
+  .history-icon {
+    color: #8a2be2;
+    font-size: 24px;
+  }
+  
+  .history-card-title {
+    flex-grow: 1;
+  }
+  
+  .history-card-title h3 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 500;
+    text-align: left;
+  }
+  
+  .emotion {
+    color: #8a2be2;
+    font-weight: 600;
+  }
+  
+  .history-card-date {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .history-card-date p {
+    margin: 0;
+  }
+  
+  .history-card-content {
+    padding-left: 36px;
+    text-align: left;
+  }
+  
+  .history-card-content h4 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .recommendations-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .recommendations-list li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    text-align: left;
+  }
+  
+  /* Responsive  */
+  @media (max-width: 768px) {
+    .history-container {
+      max-width: 100%;
+      padding: 16px;
+    }
+  
+    .history-card-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .history-card-title {
+      margin: 8px 0;
+    }
+  
+    .history-card-date {
+      align-self: flex-end;
+    }
+  }

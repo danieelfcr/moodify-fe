@@ -1,0 +1,70 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #F8F9FA;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.moodify-logo {
+    width: 120px;
+    height: auto;
+    cursor: pointer;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-login {
+    background-color: #7E22CE;
+    color: white;
+}
+
+.btn-signup, .btn-logout {
+    background-color: white;
+    color: #7E22CE;
+    border: 2px solid #7E22CE;
+}
+
+.btn-login:hover {
+    background-color: #5B159E;
+    transform: scale(1.05);
+}
+
+.btn-signup:hover, .btn-logout:hover {
+    background-color: #7E22CE;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    .buttons-container {
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 200px; 
+    }
+}

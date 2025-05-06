@@ -1,0 +1,197 @@
+
+.h1-home{
+    color: blueviolet;
+    font-size: 50px;
+    width: 700px;
+    margin-left: 70px;
+    margin-top: 150px;
+    
+}
+.p-home{
+    color: rgb(95, 90, 101);
+    font-size: 25px;
+    width: 700px;
+    margin-left: 70px;
+    margin-top: 0px;
+
+}
+
+.text-direction-home{
+    display: flex;
+    flex-direction: row;
+}
+
+.moodify-logo-home{
+    margin-top: 150px;
+    margin-left:auto;
+    margin-right: 190px;
+    width: 300px;
+    height: 300px;
+}
+
+.btn-su-home{
+    width: 170px;
+    height: 50px;
+    margin-left: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: blueviolet;
+    background-color: white;
+    box-shadow: none;
+    border-style: solid;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn-su-home:hover{
+    transform: scale(1.1);
+}
+
+.btn-si-home{
+    width: 170px;
+    height: 50px;
+    margin-left: 70px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: blueviolet;
+    box-shadow: none;
+    border-style: solid;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn-si-home:hover{
+    transform: scale(1.1);
+}
+
+.button-drection-home{
+    display: flex;
+    flex-direction: row;
+}
+
+.h1-2-home{
+    color: blueviolet;
+    font-size: 50px;
+    margin-top: 200px;
+    text-align: center;
+    
+}
+
+.p-2-home{
+    color: rgb(95, 90, 101);
+    font-size: 25px;
+    text-align: center;
+    margin-left: 110px;
+    margin-right: 110px;
+
+}
+
+.moodify-logoCamera-home{
+    width: 40px;
+    margin-left: 180px;
+    margin-top: 15px;
+    
+}
+
+.moodify-logoEmotion-home{
+    width: 40px;
+    margin-left: 180px;
+    margin-top: 15px;
+    
+}
+
+.moodify-logoNote-home{
+    width: 40px;
+    margin-left: 180px;
+    margin-top: 15px;
+    
+}
+
+.h1-s1-home{
+    color: blueviolet;
+    font-size: 25px;
+    text-align: center;
+    width: 400px;
+
+}
+
+.p-s1-home{
+    width: 400px;
+    text-align: center;
+}
+
+.square-1-home{
+    margin-left: 80px;
+    margin-top: 80px;
+    border: 1px solid rgb(231, 200, 240);
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    transition: transform 0.2s ease;
+}
+
+.h1-s2-home{
+    color: blueviolet;
+    font-size: 25px;
+    text-align: center;
+    width: 400px;
+
+}
+
+.p-s2-home{
+    width: 400px;
+    text-align: center;
+}
+
+.square-2-home{
+    margin-left: 80px;
+    margin-top: 80px;
+    border: 1px solid rgb(231, 200, 240);
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    transition: transform 0.2s ease;
+}
+
+.h1-s3-home{
+    color: blueviolet;
+    font-size: 25px;
+    text-align: center;
+    width: 400px;
+
+}
+
+.p-s3-home{
+    width: 400px;
+    text-align: center;
+}
+
+.square-3-home{
+    margin-left: 80px;
+    margin-top: 80px;
+    border: 1px solid rgb(231, 200, 240);
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    transition: transform 0.2s ease;
+    margin-bottom: 70px;
+}
+.text-direction-sqaure-home{
+    display: flex;
+    flex-direction: row;
+}
+
+.square-1-home:hover{
+    transform: scale(1.1);
+}
+
+.square-2-home:hover{
+    transform: scale(1.1);
+}
+
+.square-3-home:hover{
+    transform: scale(1.1);
+}
