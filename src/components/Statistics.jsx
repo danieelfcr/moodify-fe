@@ -4,6 +4,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
   LineChart, Line, ResponsiveContainer
 } from 'recharts'
+import './Statistics.css';
 
 export const Statistics = () => {
     const userId = sessionStorage.getItem('userid');
@@ -84,9 +85,10 @@ export const Statistics = () => {
 
   return (
     <div style={{ padding: '20px' }}>
+    <div className="statistics-main-text">
       <h2>Recommendation Statistics</h2>
-
-      <h3>Recommendations by emotion</h3>
+    </div>
+    <h3>Recommendations by emotion</h3>
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={emotionStats}>
           <CartesianGrid strokeDasharray="3 3" />

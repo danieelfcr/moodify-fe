@@ -36,8 +36,8 @@ export const History = () => {
   return (
     <div className="history-container">
       <div className="history-main-text">
-        <h1>Historial de análisis</h1>
-        <p>Revisa tus análisis anteriores y recomendaciones</p>
+        <h1>Analysis History</h1>
+        <p>Check your previous analysis and recommendations</p>
       </div>
 
       <div className="history-cards">
