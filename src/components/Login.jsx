@@ -44,6 +44,7 @@ export const Login = () => {
         console.log(res);
         //Save token in local storage
         sessionStorage.setItem('token', res.data.token);
+        sessionStorage.setItem('userid', res.data.userid);
         navigate('/dashboard'); //If everything is correct (:D), go to /dashboard
       } catch (error) {
         if (error.response && error.response.status === 404) {

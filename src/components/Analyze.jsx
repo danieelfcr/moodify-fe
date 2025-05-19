@@ -11,10 +11,10 @@ export const Analyze = () => {
   const [image, setImage] = useState(null)
   const [previewUrl, setPreviewUrl] = useState(null)
   const [showModal, setShowModal] = useState(false)
-  //Just for now..
+
   const [emotion, setEmotion] = useState(null);
-  const songs = ["Someone Like You - Adele", "Fix You - Coldplay", "Hurt - Johnny Cash"]
-  ///
+  const [songs, setSongs] = useState([]);
+
   const fileInputRef = useRef(null)
 
   //**************FILE USAGE******************* */
@@ -68,43 +68,56 @@ export const Analyze = () => {
   //Analyze emotion modal
   const analyzeEmotion = async () => {
     if (!selectedFile) {
-      alert("Upload an image first...")
-      return
+      alert("Upload an image first...");
+      return;
     }
 
-    //Encode file to base64
     const reader = new FileReader();
 
-    //"Promise"
     reader.onload = async () => {
       const base64Image = reader.result;
-      console.log(base64Image);
+
       try {
+        const token = sessionStorage.getItem("token");
+        
+        //1. Detect emotion
         const res = await axios.post(
           'http://localhost:3001/emotion/detect-emotion',
           { image_base64: base64Image },
-          {
-            headers: {
-              Authorization: `Bearer ${sessionStorage.getItem("token")}`,
-            },
-          }
+          { headers: { Authorization: `Bearer ${token}` } }
         );
-  
-        console.log(res.data);
-        setEmotion(res.data.emotion);
+
+        const detectedEmotion = res.data.emotion;
+        setEmotion(detectedEmotion);
+
+        //2. Get recommendations
+        const recommendationsRes = await axios.post(
+          'http://localhost:3001/recommendation/generate-recommendations',
+          {
+            emotionName: detectedEmotion.toUpperCase(),
+            userId: sessionStorage.getItem('userid')
+          },
+          { headers: { Authorization: `Bearer ${token}` } }
+        );
+
+        const recommendedSongs = recommendationsRes.data.recommendations.map(
+          (rec) => `${rec.songName} - ${rec.artist}`
+        );
+        setSongs(recommendedSongs);
         setShowModal(true);
+
       } catch (error) {
         if (error.response && error.response.status === 404) {
           alert("Image doesn't contain any faces.");
-        }
-        else {
-          console.error("Error analyzing emotion:", error);
-          alert("There was an error analyzing the emotion.");
+        } else {
+          console.error("Error analyzing emotion or fetching songs:", error);
+          alert("There was an error processing the request.");
         }
       }
     };
-    reader.readAsDataURL(selectedFile); //Convert image to a base64 string
-  }
+
+    reader.readAsDataURL(selectedFile);
+  };
 
   const closeModal = () => {
     setShowModal(false)
