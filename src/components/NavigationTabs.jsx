@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./NavigationTabs.css";
 import { Analyze } from "./Analyze";
 import { History } from "./History";
+import { Statistics } from "./Statistics";
 
 export const NavigationTabs = () => {
   const [selected, setSelected] = useState("analyze");
@@ -31,7 +32,7 @@ export const NavigationTabs = () => {
       <div className="content-container">
         {selected === "analyze" && <div><Analyze/></div>}
         {selected === "history" && <div><History/></div>}
-        {selected === "statistics" && <div>Coming soon...</div>}
+        {selected === "statistics" && <div><Statistics/></div>}
       </div>
     </>
   );
