@@ -40,7 +40,7 @@ export const Login = () => {
       };
 
       try {
-        const res = await axios.post('http://localhost:3001/auth/login', user);
+        const res = await axios.post('https://api.moodify.click/auth/login', user);
         console.log(res);
         //Save token in local storage
         sessionStorage.setItem('token', res.data.token);

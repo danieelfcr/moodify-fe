@@ -82,7 +82,7 @@ export const Analyze = () => {
         
         //1. Detect emotion
         const res = await axios.post(
-          'http://localhost:3001/emotion/detect-emotion',
+          'https://api.moodify.click/emotion/detect-emotion',
           { image_base64: base64Image },
           { headers: { Authorization: `Bearer ${token}` } }
         );
@@ -92,7 +92,7 @@ export const Analyze = () => {
 
         //2. Get recommendations
         const recommendationsRes = await axios.post(
-          'http://localhost:3001/recommendation/generate-recommendations',
+          'https://api.moodify.click/recommendation/generate-recommendations',
           {
             emotionName: detectedEmotion.toUpperCase(),
             userId: sessionStorage.getItem('userid')

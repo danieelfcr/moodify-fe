@@ -13,7 +13,7 @@ export const History = () => {
   useEffect(() => {
     const fetchHistory = async () => {
       try {
-        const response = await axios.get(`http://localhost:3001/users/history/${userId}`, {
+        const response = await axios.get(`https://api.moodify.click/users/history/${userId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

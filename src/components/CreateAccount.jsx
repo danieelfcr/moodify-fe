@@ -58,7 +58,7 @@ export const CreateAccount = () => {
           };
 
           try {
-            const res = await axios.post('http://localhost:3001/users/create-user', newUser);
+            const res = await axios.post('https://api.moodify.click/users/create-user', newUser);
             console.log(res);
             alert("Account created successfully. You can now log in!");
             navigate('/login');

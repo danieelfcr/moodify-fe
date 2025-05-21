@@ -29,7 +29,7 @@ export const Statistics = () => {
     const fetchHistory = async () => {
         const token = sessionStorage.getItem('token')
         try {
-        const response = await axios.get(`http://localhost:3001/users/history/${userId}`, {
+        const response = await axios.get(`https://api.moodify.click/users/history/${userId}`, {
             headers: {
             Authorization: `Bearer ${token}`
             }
